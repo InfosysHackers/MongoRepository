@@ -47,6 +47,12 @@ app.post('/upload', function(req, res) {
 
 app.get('/', function(req, res) {
 
+  MongoClient.connect(url, function (err, database) {
+    console.log("Connected correctly to server =" + database + "err" + err);
+    db = database;
+    console.log("Connected correctly to server 123");
+  });
+  
 	var gfs = Grid(db, mongo);
     
     var tempfile    = "D:/Planograms/1.jpg";
