@@ -12,9 +12,9 @@ app.listen(3000, function() {
 
 var mongo = require('mongodb');
 var MongoClient = require('mongodb').MongoClient;
-var url = 'mongodb://192.168.99.100:27017/test';
+//var url = 'mongodb://192.168.99.100:27017/test';
 //var url = 'mongodb://172.17.0.1:27017/test';
-//var url = 'mongodb://localhost:27017/test';
+var url = 'mongodb://localhost:27017/test';
 var db;
 
 
